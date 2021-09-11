@@ -1,0 +1,262 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.main-content .section-user .container .user-wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to top right, #cb4780, rgba(232, 119, 93, 0.9)), url(../image/phong-canh-thien-nhien-dep-1.jpg);
+}
+.main-content .section-user .container .user-wrapper .wrapper {
+  width: 100%;
+}
+.main-content .section-user .container .user-wrapper .wrapper .user {
+  position: relative;
+  margin-bottom: 100px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+.main-content .section-user .container .user-wrapper .wrapper .user::after {
+  content: "";
+  width: 40px;
+  height: 5px;
+  background-color: white;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.main-content .section-user .container .user-wrapper .wrapper .user .user-avarta {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.main-content .section-user .container .user-wrapper .wrapper .user .user-avarta .avarta {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.main-content .section-user .container .user-wrapper .wrapper .user .title {
+  color: white;
+  font-size: 30px;
+  text-transform: capitalize;
+  letter-spacing: 10px;
+}
+.main-content .section-user .container .user-wrapper .wrapper .user .heading {
+  font-family: 'Kaisei HarunoUmi', serif;
+  color: #F5BBC2;
+  font-size: 40px;
+  text-transform: capitalize;
+}
+.main-content .section-user .container .user-wrapper .wrapper .text {
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  position: relative;
+  margin-bottom: 30px;
+}
+.main-content .section-user .container .user-wrapper .wrapper .text::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.main-content .section-user .container .user-wrapper .wrapper .text .text-line {
+  position: relative;
+  z-index: 20;
+  display: inline-block;
+  background-color: #CF5679;
+  padding: 0px 10px;
+}
+.main-content .section-user .container .user-wrapper .wrapper-login {
+  display: none;
+}
+.main-content .section-user .container .user-wrapper .wrapper-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.main-content .section-user .container .user-wrapper .wrapper-inner .close {
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+  position: absolute;
+  top: 0px;
+  left: 20px;
+}
+.main-content .section-user .container .user-wrapper .wrapper-inner .text-login {
+  font-size: 16px;
+  color: #4e4e5c;
+  text-align: center;
+}
+.main-content .section-user .container .user-wrapper .wrapper-inner .text-login-top {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.main-content .section-user .container .user-wrapper .wrapper-inner .account {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: #F2F1F1;
+  border-radius: 15px;
+  padding: 50px;
+  margin-bottom: 50px;
+}
+.main-content .section-user .container .user-wrapper .wrapper-inner .account .login-title {
+  padding-bottom: 20px;
+}
+.main-content .section-user .container .user-wrapper .wrapper-inner .account .box-input {
+  width: 100%;
+  position: relative;
+  margin-bottom: 30px;
+}
+.main-content .section-user .container .user-wrapper .wrapper-inner .account .box-input .input {
+  outline: none;
+  background-color: #F2F1F1;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid grey;
+  padding-left: 10px;
+}
+.main-content .section-user .container .user-wrapper .wrapper-inner .account .box-input .input::placeholder {
+  font-size: 16px;
+}
+.main-content .section-user .container .user-wrapper .wrapper-inner .account .box-input i {
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #CF5679;
+}
+.main-content .section-user .container .user-wrapper .wrapper-inner .account .check-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 50px;
+}
+.main-content .section-user .container .user-wrapper .wrapper-inner .account .check-box .text-login {
+  color: black;
+  font-weight: 700;
+}
+.main-content .section-user .container .user-wrapper .wrapper-inner .account .check-box .check[type="checkbox"] {
+  position: relative;
+  width: 50px;
+  height: 20px;
+  -webkit-appearance: none;
+  background-color: #c6c6c6;
+  border-radius: 10px;
+  outline: none;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.main-content .section-user .container .user-wrapper .wrapper-inner .account .check-box .check[type="checkbox"]::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  transform: translateY(-50%);
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  transition: linear 0.5s;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.main-content .section-user .container .user-wrapper .wrapper-inner .account .check-box .check:checked[type="checkbox"] {
+  background-color: #03a9f4;
+}
+.main-content .section-user .container .user-wrapper .wrapper-inner .account .check-box .check:checked[type="checkbox"]::before {
+  left: 50%;
+}
+.main-content .section-user .container .user-wrapper .wrapper-inner .account .btn {
+  background-image: linear-gradient(to top right, #cb4780, rgba(232, 119, 93, 0.9));
+}
+.main-content .section-user .container .user-wrapper .wrapper-inner .account .btn:hover {
+  color: white;
+}
+.main-content .section-user .container .user-wrapper .wrapper-inner .text-bottom {
+  border-top: 1px solid white;
+  display: flex;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 500px;
+  padding-top: 20px;
+}
+.main-content .section-user .container .user-wrapper .wrapper-inner .text-bottom .text-bottom-wrapper {
+  margin: auto;
+}
+.main-content .section-user .container .user-wrapper .wrapper-inner .text-bottom .text-bottom-wrapper .text-login {
+  padding-right: 10px;
+}
+.main-content .section-user .container .user-wrapper .wrapper-inner .text-bottom .text-bottom-wrapper .sign-up-link {
+  color: white;
+}
+.main-content .section-user .container .user-wrapper .wrapper-register {
+  display: none;
+}
+.main-content .section-user .container .user-wrapper .wrapper-register .account .check-box {
+  justify-content: flex-start;
+}
+.main-content .section-user .container .user-wrapper .wrapper-register .account .check-box .tick {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  margin-right: 20px;
+}
+.main-content .section-user .container .user-wrapper .wrapper-register .account .check-box .text-login {
+  color: #4e4e5c;
+}
+.main-content .section-user .container .user-wrapper .wrapper-register .account .check-box .text-login .sign-up-link {
+  text-decoration: none;
+  color: black;
+  margin-left: 5px;
+  position: relative;
+}
+.main-content .section-user .container .user-wrapper .wrapper-register .account .check-box .text-login .sign-up-link::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #4e4e5c;
+  position: absolute;
+  bottom: -2px;
+  left: 0px;
+}
+.account {
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+}
+.btn {
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+  border-radius: 20px;
+  width: 100%;
+  padding: 10px 0px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+.btn:hover {
+  color: #DD5878;
+  background-color: white;
+}
